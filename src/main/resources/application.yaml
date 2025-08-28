@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: internship
+  datasource:
+    url: jdbc:postgresql://db:5432/appdb
+    username: appuser
+    password: secret123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
+  forward-headers-strategy: framework
